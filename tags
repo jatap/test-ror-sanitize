@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AllFiles	/Users/julioantuneztarin/Rails/ror-sanitize/coverage/index.html	/^  <a name="AllFiles"><\/a>$/;"	a
+Application	/Users/julioantuneztarin/Rails/ror-sanitize/config/application.rb	/^  class Application < Rails::Application$/;"	c	class:RorSanitize
+ApplicationController	/Users/julioantuneztarin/Rails/ror-sanitize/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	/Users/julioantuneztarin/Rails/ror-sanitize/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+Binaries	/Users/julioantuneztarin/Rails/ror-sanitize/coverage/index.html	/^  <a name="Binaries"><\/a>$/;"	a
+Extensions	/Users/julioantuneztarin/Rails/ror-sanitize/coverage/index.html	/^  <a name="Extensions"><\/a>$/;"	a
+Libraries	/Users/julioantuneztarin/Rails/ror-sanitize/coverage/index.html	/^  <a name="Libraries"><\/a>$/;"	a
+RorSanitize	/Users/julioantuneztarin/Rails/ror-sanitize/config/application.rb	/^module RorSanitize$/;"	m
+Ungrouped	/Users/julioantuneztarin/Rails/ror-sanitize/coverage/index.html	/^  <a name="Ungrouped"><\/a>$/;"	a
+VendorLibraries	/Users/julioantuneztarin/Rails/ror-sanitize/coverage/index.html	/^  <a name="VendorLibraries"><\/a>$/;"	a
+about	/Users/julioantuneztarin/Rails/ror-sanitize/public/index.html	/^      function about() {$/;"	f
+toggle	/Users/julioantuneztarin/Rails/ror-sanitize/tmp/brakeman_results.html	/^    function toggle(context) {$/;"	f
