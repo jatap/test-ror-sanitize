@@ -13,7 +13,8 @@ HTML_BASE = <<-CODE
 CODE
 
 HTML_ADD_ATTRIBUTES      = '<a href="http://foo.com" rel="nofollow">foo</a>'
-HTML_ATTRIBUTES          = '<a id="brand" class="external" href="http://foo.com" rel="nofollow" title="test title">foo</a>'
+HTML_ATTRIBUTES          = '<a id="brand" class="external" href="http://foo.com" ' \
+                           'rel="nofollow" title="test title">foo</a>'
 HTML_ALLOW_COMMENTS      = '<!-- Sample allowed comment --><b>foo</b>'
 HTML_ELEMENTS            = '<span>foo</span>'
 HTML_OUTPUT              = 'one<br/>two'
@@ -60,10 +61,13 @@ describe 'Sanitize' do
   end
 
   context 'given custom configuration' do
-    let(:config) {
-      { elements:   %w(a b),
+    let(:config) do
+      {
+        elements:   %w(a b),
         attributes: { 'a' => %w(id href), 'b' => %w(class id) },
-        protocols:  { 'a' => { 'href' => ['http'] }}} }
+        protocols:  { 'a' => { 'href' => ['http'] } }
+      }
+    end
 
     context 'admits a hash of options' do
       let(:response) { '<b><a href="http://foo.com/">foo</a></b>' }
@@ -179,11 +183,13 @@ describe 'Sanitize' do
     end
 
     context ':transformers' do
-      let(:transformer) { ->(env) { { node_whitelist: [env[:node]] } if env[:node_name] == 'h2' }}
+      let(:transformer) do
+        ->(env) { { node_whitelist: [env[:node]] } if env[:node_name] == 'h2' }
+      end
       let(:response) { HTML_TRANSFORMERS }
 
       it 'can handle external domain logic' do
-        expect(Sanitize.clean(HTML_TRANSFORMERS, :transformers => transformer)).to eq response
+        expect(Sanitize.clean(HTML_TRANSFORMERS, transformers: transformer)).to eq response
       end
     end
   end
