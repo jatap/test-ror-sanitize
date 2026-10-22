@@ -60,7 +60,6 @@ group :development do
   gem 'parser', '2.0.0.pre8', require: false
   gem 'cane'
   gem 'rcodetools'
-  gem 'fastri'
   gem 'flay'
   gem 'flog'
   gem 'guard-flog', git: 'git://github.com/pericles/guard-flog.git'
@@ -103,7 +102,6 @@ group :test do
   gem 'nyan-cat-formatter'
   gem 'fuubar'
   gem 'rcodetools'
-  gem 'fastri'
   # Travis requirements
   gem 'rake'
 end

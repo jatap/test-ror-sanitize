@@ -117,7 +117,6 @@ GEM
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
     fastercsv (1.5.5)
-    fastri (0.3.1.1)
     ffaker (1.18.0)
     ffi (1.9.0)
     flay (2.4.0)
@@ -372,7 +371,6 @@ DEPENDENCIES
   debugger
   email_spec
   factory_girl_rails
-  fastri
   ffaker
   flay
   flog
@@ -427,3 +425,6 @@ DEPENDENCIES
   uglifier (>= 1.0.3)
   webrat
   yard
+
+BUNDLED WITH
+   1.17.3
